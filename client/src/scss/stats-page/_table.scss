@@ -1,0 +1,44 @@
+.stats {
+  &__table {
+    min-height: 772px;
+    padding: 0px 130px;
+    margin: 0 auto;
+    &__title {
+      height: 39px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 39px;
+      color: $text-black;
+    }
+  }
+  & table {
+    margin-top: 16px;
+    width: 100%;
+    & thead {
+      background-color: $blue;
+      color: $text-white;
+      & tr {
+        height: 48px;
+        & th:first-child {
+          border-radius: 10px 0px 0px 0px;
+        }
+        & th:last-child {
+          border-radius: 0px 10px 0px 0px;
+        }
+      }
+    }
+    & tbody {
+      & tr {
+        height: 32px;
+        text-align: center;
+        background: $table-white;
+      }
+      & tr:nth-child(2n) {
+        background: $table-grey;
+      }
+    }
+  }
+}

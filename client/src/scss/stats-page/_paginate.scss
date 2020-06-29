@@ -1,0 +1,59 @@
+.pagination {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 24px 0px;
+  & li {
+    & a {
+      user-select: none;
+      cursor: pointer;
+      display: block;
+      margin: 0 4px;
+      min-width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      border: 2px solid #F1F1F1;
+      font-size: 16px;
+      line-height: 46px;
+      text-align: center;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      color: $text-black;
+      &:active {
+        outline: none;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &.active{
+      & a {
+        background: $blue;
+      }
+    }
+    &:first-child {
+      & a {
+        border: unset;
+      }
+    }
+    &:last-child {
+      & a {
+        border: unset;
+      }
+    }
+  }
+}
+
+.right-button {
+  background-image: url(../../image/stats-page/right-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.left-button {
+  background-image: url(../../image/stats-page/left-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

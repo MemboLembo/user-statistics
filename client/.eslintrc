@@ -1,0 +1,42 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    }
+  },
+  "plugins": [
+    "react-redux"
+  ],
+  "extends": [
+    "airbnb/base",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-redux/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect" // React version. "detect" automatically picks the version you have installed.
+                           // You can also use `16.0`, `16.3`, etc, if you want to override the detected value.
+                           // default to latest and warns if missing
+                           // It will default to "detect" in the future
+    }
+  },
+  "rules": {
+    "arrow-body-style": "off",
+    "no-console":"off",
+    "no-plusplus":"off",
+    "max-len":["error", 120, { "ignoreUrls": true }],
+    "import/prefer-default-export": "off",
+    "react/display-name":"off",
+    "react-redux/prefer-separate-component-file": "off",
+    "react/prop-types": 0
+  }
+}

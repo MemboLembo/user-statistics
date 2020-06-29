@@ -1,0 +1,65 @@
+.subheader {
+  display: flex;
+  justify-content: space-between;
+  & .user-name {
+    height: 39px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: $text-black;
+  }
+  & .date-picker {
+    display: flex;
+    justify-content: center;
+    & label {
+      margin-right: 5px;
+      line-height: 39px;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      color: $text-black;
+    }
+    & input {
+      margin-right: 5px;
+      height: 39px;
+      width: 200px;
+      background: #FFFFFF;
+      border: 1px solid $blue;
+      border-radius: 10px;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      color: $text-black;
+      &:focus {
+        outline: none;
+      }
+    }
+    & .date-picker-submit {
+      cursor: pointer;
+      width: 120px;
+      height: 39px;
+      background: $blue;
+      border: 0;
+      border-radius: 8px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      color: $text-white;
+      &:active {
+        outline: none;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
