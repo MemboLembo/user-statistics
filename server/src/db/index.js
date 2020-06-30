@@ -18,7 +18,7 @@ const toCamelCase = (array) => {
 
 exports.init = async() => {
 
-  const sequelize = new Sequelize('sqlite::memory:')
+  const sequelize = new Sequelize('sqlite::memory:');
 
   User.initialize(sequelize);
   Stats.initialize(sequelize);
