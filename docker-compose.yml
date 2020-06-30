@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+
+  frontend:
+    image: front
+    build:
+      context: ./client
+      dockerfile: ./Dockerfile
+
+  backend:
+    image: backend
+    build:
+      context: ./server
+    restart: always
+
+  nginx:
+    depends_on:
+      - frontend
+      - backend
+    build:
+      context: ./nginx
+    restart: always
+    ports:
+      - 3080:80
+    volumes:
+    - ./nginx/conf:/etc/nginx/conf.d/

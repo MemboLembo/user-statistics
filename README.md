@@ -1,21 +1,22 @@
-# client
-In directory client install dependencies with 
-```
-yarn 
-```
-Run client with
-```
-yarn start
-```
-Available on [localhost:3000](http://localhost:3000)
+You can start the app either via docker-compose or directly from terminal
 
-# server
-In directory server install dependencies with 
+
+Docker Compose:
 ```
-yarn
+docker-compose up
 ```
-Run server with
+Go to [localhost:3080](http://localhost:3080)
+
+
+
+
+CLI:
+
 ```
-yarn start
+cd server && yarn && yarn start
 ```
-Server is listening to port :4000
+```
+cd client && yarn && yarn start
+```
+
+Go to [localhost:3000](http://localhost:3000)
