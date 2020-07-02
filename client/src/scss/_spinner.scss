@@ -1,5 +1,9 @@
 @import './_variables.scss';
 
+.spinner {
+  text-align: center;
+  margin-top: 20px;
+}
 .lds-ring {
   display: inline-block;
   position: relative;
