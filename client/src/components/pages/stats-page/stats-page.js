@@ -3,13 +3,12 @@ import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import ReactPaginate from 'react-paginate';
-import RenderRows from './render-rows';
+import Table from './table';
 import Header from '../../header/header';
 import Footer from '../../footer/footer';
 import { fetchUsersStatistics } from '../../../actions/users-statistics-actions';
 import { compose } from '../../../utils';
 import { withUsersDataService } from '../../hoc';
-import '../../../scss/stats-page/stats-page.scss';
 
 const DEFAULT_PAGE = 1;
 const USERS_PER_PAGE = 50;
@@ -48,28 +47,11 @@ class StatsPage extends Component {
             </nav>
 
             <div className="stats__table__title">User statistic</div>
-            <div className="table-box">
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th>Id</th>
-                    <th>First name</th>
-                    <th>Last name</th>
-                    <th>Email</th>
-                    <th>Gender</th>
-                    <th>IP address</th>
-                    <th>Total clicks</th>
-                    <th>Total page views</th>
-                  </tr>
-                </thead>
-
-                <RenderRows
-                  statistics={statistics}
-                  loading={loading}
-                  error={error}/>
-              </table>
-
-            </div>
+            <Table
+            statistics={statistics}
+            loading={loading}
+            error={error}
+            />
 
           </div>
 

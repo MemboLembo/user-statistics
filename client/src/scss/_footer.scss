@@ -4,36 +4,27 @@
   &-text {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding-top: 14px;
-    &__name {
+    &__item {
       width: 270px;
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
+      color: $text-white;
+      text-align: center;
+    }
+    & .name {
       font-size: 32px;
-      line-height: 39px;
-      color: $text-white;
-      text-align: center;
+      // line-height: 29px;
     }
-    &__rights {
-      width: 270px;
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
+    & .rights {
       font-size: 16px;
-      line-height: 39px;
-      color: $text-white;
-      text-align: center;
+      // line-height: 29px;
     }
-    &__copyrights {
-      width: 270px;
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
+    .copyrights {
       font-size: 16px;
-      line-height: 39px;
-      color: $text-white;
-      text-align: center;
+      // line-height: 29px;
     }
   }
 }

@@ -1,11 +1,11 @@
-.card {
+.cards-wrapper {
   margin: 0 auto;
   margin-top: 40px;
   width: 1180px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  &__design {
+  & .card {
     width: 380px;
     height: 323px;
     padding: 48px 32px;
@@ -13,131 +13,41 @@
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
     border-radius: 32px;
     &__img {
-      width: 106px;
       height: 96px;
-      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &__title {
+      margin-top: 40px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+
+      color: $text-black;
+    }
+    &__subtitle {
+      margin-top: 16px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      text-align: center;
+      color: $text-grey;
+    }
+    & .design {
       background-image: url(../../image/main-page/cards/icon-design.svg);
-      background-repeat: no-repeat;
-      background-position: center;
     }
-    &__title {
-      width: 164px;
-      height: 29px;
-      margin: 0 auto;
-      margin-top: 40px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
-
-      color: $text-black;
-    }
-    &__subtitle {
-      width: 316px;
-      height: 46px;
-      margin: 0 auto;
-      margin-top: 16px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 23px;
-      text-align: center;
-      color: $text-grey;
-    }
-  }
-  &__secure {
-    width: 380px;
-    height: 323px;
-    padding: 48px 32px;
-    background: $text-white;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
-    border-radius: 32px;
-    &__img {
-      width: 106px;
-      height: 96px;
-      margin: 0 auto;
+    & .secure {
       background-image: url(../../image/main-page/cards/icon-secure.svg);
-      background-repeat: no-repeat;
-      background-position: center;
     }
-    &__title {
-      width: 164px;
-      height: 29px;
-      margin: 0 auto;
-      margin-top: 40px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
-
-      color: $text-black;
-    }
-    &__subtitle {
-      width: 316px;
-      height: 46px;
-      margin: 0 auto;
-      margin-top: 16px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 23px;
-      text-align: center;
-      color: $text-grey;
-    }
-  }
-  &__retina {
-    width: 380px;
-    height: 323px;
-    padding: 48px 32px;
-    background: $text-white;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
-    border-radius: 32px;
-    &__img {
-      width: 106px;
-      height: 96px;
-      margin: 0 auto;
+    & .retina {
       background-image: url(../../image/main-page/cards/icon-retina.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    &__title {
-      width: 164px;
-      height: 29px;
-      margin: 0 auto;
-      margin-top: 40px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
-
-      color: $text-black;
-    }
-    &__subtitle {
-      width: 316px;
-      height: 46px;
-      margin: 0 auto;
-      margin-top: 16px;
-
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 23px;
-      text-align: center;
-      color: $text-grey;
     }
   }
 }

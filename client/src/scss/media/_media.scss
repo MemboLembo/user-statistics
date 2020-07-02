@@ -1,0 +1,311 @@
+@media ( max-width: 1440px ) {
+  .container {
+    width: 1200px;
+  }
+  .mobile {
+    left: 800px;
+  }
+
+
+  .stats__table {
+    padding: 0px 100px;
+  }
+
+
+  .charts {
+    .inner-blocks {
+      padding: 0px 70px;
+    }
+  }
+}
+
+@media ( max-width: 1200px ) {
+  .container {
+    width: 992px;
+  }
+  .mobile {
+    display: none;
+  }
+  .cards-wrapper {
+    width: 950px;
+    & .card {
+      width: 270px;
+      padding: 40px 20px;
+    }
+  }
+
+
+  .stats__table {
+    padding: 0px 25px;
+  }
+
+
+  .charts {
+    .inner-blocks {
+      padding: 0px 40px;
+    }
+  }
+}
+
+@media ( max-width: 992px ) {
+  .container {
+    width: 768px;
+  }
+  .main__adventages {
+    &__title {
+      width: 100%;
+    }
+    &__subtitle {
+      width: 100%;
+    }
+  }
+  .cards-wrapper {
+    flex-direction: column;
+    width: 768px;
+    & .card {
+      margin-bottom: 10px;
+      width: 350px;
+    }
+  }
+  .footer {
+    &-text{
+      &__item {
+        width: 180px;
+      }
+    }
+  }
+
+
+  .charts {
+    .inner-blocks {
+      padding: 0px 20px;
+    }
+    .subheader {
+      display: block;
+      .user-name {
+        text-align: center;
+      }
+      .date-picker {
+        margin-top: 15px; 
+      }
+    }
+  }
+}
+
+@media ( max-width: 768px ){
+  .container {
+    width: 568px;
+  }
+  .header-title {
+    margin: 0 auto;
+  }
+  .main__header {
+    padding: 24px 10px;
+    text-align: center;
+    &__subtitle {
+      width: 100%;
+      margin: 20px auto;
+      font-size: 38px;
+      line-height: 49px;
+    }
+    &__description {
+      width: 100%;
+      margin: 10px auto;
+    }
+    &__button {
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+  }
+  .cards-wrapper {
+    width: 568px;
+  }
+  .main__footer {
+    & form {
+      width: 500px;
+      & button {
+        left: 320px;
+      }
+    }
+  }
+
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    border: 1px solid $text-grey;
+  }
+  td {
+    border: none;
+    border-bottom: 1px solid $text-grey;
+    position: relative;
+    padding-left: 230px;
+
+    text-align: left;
+    overflow: hidden;
+  }
+  td:before {
+    position: absolute;
+    left: 6px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  td:nth-of-type(1):before { content: "Id"; }
+  td:nth-of-type(2):before { content: "First name"; }
+  td:nth-of-type(3):before { content: "Last Name"; }
+  td:nth-of-type(4):before { content: "Email";}
+  td:nth-of-type(5):before { content: "Gender";}
+  td:nth-of-type(6):before { content: "Ip address";}
+  td:nth-of-type(7):before { content: "Total clicks";}
+  td:nth-of-type(8):before { content: "Total page views";}
+
+  .stats table tbody tr {
+    height: fit-content;
+  }
+
+
+  .charts {
+    .subheader {
+      .date-picker {
+        label {
+          font-size: 14px;
+          line-height: 29px;
+        }
+        input {
+          height: 29px;
+          width: 100px;
+          font-size: 14px;
+        }
+        .date-picker-submit {
+          height: 29px;
+        }
+      }
+    }
+  }
+}
+
+@media ( max-width: 568px  ) {
+  .container {
+    width: 320px;
+  }
+  .main__header {
+    &__subtitle {
+      height: 80px;
+      font-size: 28px;
+      line-height: 39px;
+    }
+    &__description {
+      font-size: 15px;
+      line-height: 22px;
+    }
+    &__button {
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+  }
+  .main__adventages {
+    &__title {
+      font-size: 22px;
+      line-height: 29px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+  .cards-wrapper {
+    width: 320px;
+    & .card {
+      width: 300px;
+    }
+  }
+  .main__footer {
+    & form {
+      width: 320px;
+      text-align: center;
+      & input {
+        width: 300px;
+      }
+      & button {
+        left: 226px;
+        width: 80px;
+      }
+    }
+  }
+  .footer {
+    height: 70px;
+    &-text{
+      padding: 5px;
+      &__item {
+        width: 100px;
+      }
+      & .name {
+        font-size:22px;
+        line-height: 19px;
+      }
+      & .rights {
+        font-size: 14px;
+        line-height: 19px;
+      }
+      & .copyrights {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+
+
+  .stats__table {
+    padding: 0px;
+    &__title {
+      text-align: center;
+    }
+  }
+  table {
+    font-size: 13px;
+  }
+  td {
+    padding-left: 130px;
+  }
+  td:before {
+    padding-left: 0px;
+  }
+  .pagination li a {
+    min-width: 30px;
+    height: 30px;
+    line-height: 27px;
+  }
+
+
+  .charts {
+    .inner-blocks {
+      padding: 0px;
+      min-height: 650px;
+    }
+    .breadcrumb {
+      padding-left: 5px;
+      &__item {
+        font-size: 12px;
+      }
+    }
+    .subheader {
+      .date-picker {
+        display: block;
+        text-align: center;
+        .date-picker-submit {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
