@@ -12,7 +12,6 @@ import Header from '../../header/header';
 import Diagrams from './diagrams';
 
 import 'react-datepicker/dist/react-datepicker.css';
-import '../../../scss/charts-page/charts-page.scss';
 
 const START_DATE = new Date(new Date()).setDate((new Date()).getDate() - 6);
 

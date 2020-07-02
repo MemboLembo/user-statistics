@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../footer/footer';
-import '../../scss/main-page/main-page.scss';
 
 const MainPage = () => {
   return (

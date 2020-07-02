@@ -9,7 +9,6 @@ import Footer from '../../footer/footer';
 import { fetchUsersStatistics } from '../../../actions/users-statistics-actions';
 import { compose } from '../../../utils';
 import { withUsersDataService } from '../../hoc';
-import '../../../scss/stats-page/stats-page.scss';
 
 const DEFAULT_PAGE = 1;
 const USERS_PER_PAGE = 50;
