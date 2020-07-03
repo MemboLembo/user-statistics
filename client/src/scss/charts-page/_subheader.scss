@@ -2,11 +2,7 @@
   display: flex;
   justify-content: space-between;
   & .user-name {
-    height: 39px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
+    font-family: 'Montserrat-Bold';
     font-size: 32px;
     line-height: 39px;
     color: $text-black;
@@ -18,10 +14,7 @@
       margin-right: 5px;
       line-height: 39px;
       text-align: center;
-      font-family: Montserrat;
       font-size: 20px;
-      font-style: normal;
-      font-weight: normal;
       color: $text-black;
     }
     & input {
@@ -32,10 +25,7 @@
       border: 1px solid $blue;
       border-radius: 10px;
       text-align: center;
-      font-family: Montserrat;
       font-size: 20px;
-      font-style: normal;
-      font-weight: normal;
       color: $text-black;
       &:focus {
         outline: none;
@@ -48,9 +38,6 @@
       background: $blue;
       border: 0;
       border-radius: 8px;
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
       font-size: 16px;
       line-height: 23px;
       color: $text-white;
